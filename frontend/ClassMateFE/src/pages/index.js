@@ -1,0 +1,16 @@
+export { default as Landing } from './Landing';
+export { default as HomeLayout } from './HomeLayout';
+export { default as Register } from './Register';
+export { default as Login } from './Login';
+export { default as Error } from './Error';
+export { default as AddClass } from './AddClass';
+export { default as AllClasses } from './AllClasses';
+export { default as EditClass } from './EditClass';
+export { default as AddNote } from './AddNote';
+export { default as AllNotes } from './AllNotes';
+export { default as EditNote } from './EditNote';
+export { default as AddToDo } from './AddToDo';
+export { default as AllToDos } from './AllToDos';
+export { default as EditToDo } from './EditToDo';
+export { default as DashboardLayout } from './DashboardLayout';
+export { default as Dashboard } from './Dashboard';

@@ -1,0 +1,20 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ClassMate.API.Models
+{
+    public record CreateToDoModel
+    (
+        [Required]
+        [StringLength(100)]
+        string Title,
+
+        [StringLength(500)]
+        string Description,
+
+        [Required]
+        DateTime Deadline,
+
+        Guid? ToDoID
+
+    );
+}

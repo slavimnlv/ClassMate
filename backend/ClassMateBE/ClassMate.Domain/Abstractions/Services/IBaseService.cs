@@ -1,0 +1,24 @@
+﻿using ClassMate.Domain.Dtos;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ClassMate.Domain.Abstractions.Services
+{
+    public interface IBaseService<TDto>
+    where TDto : BaseDto
+    {
+        public Task<TDto> GetByIdAsync(Guid id);
+
+        public Task<IEnumerable<TDto>> GetAllAsync(int pageNumber, int pageSize, Expression<Func<TDto, bool>>? filter = null);
+
+        public Task<TDto> CreateAsync(TDto dto);
+
+        public Task DeleteAsync(Guid id);
+
+        public Task UpdateAsync(TDto dto);
+    }
+}
